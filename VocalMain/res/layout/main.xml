@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="20dip">
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/linearLayout2" android:layout_weight="0"
+		android:layout_width="match_parent">
+		<EditText android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="wrap_content" android:id="@+id/urlTextView">
+			<requestFocus></requestFocus>
+		</EditText>
+		<LinearLayout android:layout_height="match_parent"
+			android:id="@+id/linearLayout3" android:layout_width="wrap_content" android:layout_weight="0">
+			<Button android:layout_height="wrap_content"
+				android:text="@string/enter" android:layout_width="wrap_content" android:layout_marginRight="-5dip" android:id="@+id/go_btn"></Button>
+			<Button android:layout_height="wrap_content"
+				android:text="@string/back" android:layout_width="wrap_content" android:layout_marginRight="-5dip" android:id="@+id/back_btn"></Button>
+			<Button android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="@string/forward" android:layout_marginRight="-5dip" android:id="@+id/forward_btn"></Button>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="wrap_content" android:id="@+id/linearLayout1"
+		android:orientation="vertical" android:layout_weight="3">
+		<WebView android:layout_weight="1.0" android:layout_width="match_parent"
+			android:layout_height="match_parent" android:id="@+id/webView"></WebView>
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+		<Button android:layout_height="wrap_content" android:id="@+id/btnStart"
+			android:text="@string/start_recording" android:layout_weight="1.0"
+			android:layout_width="0dip" />
+		<Button android:layout_height="wrap_content" android:id="@+id/btnStop"
+			android:text="@string/stop_recording" android:layout_weight="1.0"
+			android:layout_width="0dip" />
+		<Button android:layout_weight="1.0" android:layout_height="wrap_content"
+			android:layout_width="0dip" android:text="@string/play" android:id="@+id/play_btn"></Button>
+	</LinearLayout>
+</LinearLayout>
